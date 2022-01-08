@@ -63,7 +63,7 @@ function setup() {
   enemyG = new Group();
   missileGroup=new Group();
 
-  spaceShip.debug = true;
+//   spaceShip.debug = true;
 
 }
 
