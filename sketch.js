@@ -79,6 +79,7 @@ function draw() {
   }else if(gameState === 1) {
     // console.log(bgImg.x)
     spaceShip.visible = true;
+//     monsterShip.visible = true;
     bgImg.velocityX = -bgImg.velocityX-50;
     if(bgImg.x<=450){
       bgImg.x = windowWidth*2.5;
@@ -138,6 +139,7 @@ function draw() {
     if (missileGroup.isTouching(spaceShip)){
       gameState = 2;
       missileGroup.destroyEach();
+      monsterShip.velocityX = -40;
       // missile.visible = false;
     }
     
